@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 def add_args(argv):
-
-
     n = len(argv) - 1
     if n == 0:
         print("{:d}".format(n))
