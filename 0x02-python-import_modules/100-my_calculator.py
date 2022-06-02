@@ -11,13 +11,13 @@ def calculator(argv):
     opp == int(argv[1])
     b == int(argv[2])
     if (opp == "+"):
-        print("{:d} {:s} {:d} = {:d}".format(a, b, opp, add(a, b)))
+        print("{:d} {:s} {:d} = {:d}".format(a, opp, b, add(a, b)))
     elif (opp == "-"):
-        print("{:d} {:s} {:d} = {:d}".format(a, b, opp, sub(a, b)))
+        print("{:d} {:s} {:d} = {:d}".format(a, opp, b, sub(a, b)))
     elif (opp == "*"):
-        print("{:d} {:s} {:d} = {:d}".format(a, b, opp, mul(a, b)))
+        print("{:d} {:s} {:d} = {:d}".format(a, opp, b, mul(a, b)))
     elif (opp == "/"):
-        print("{:d} {:s} {:d} = {:d}".format(a, b, opp, div(a, b)))
+        print("{:d} {:s} {:d} = {:d}".format(a, opp, b, div(a, b)))
     else:
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
