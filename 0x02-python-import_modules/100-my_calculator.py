@@ -7,9 +7,9 @@ def calculator(argv):
     if n != 3:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
-    a == int(argv[0])
-    opp == int(argv[1])
-    b == int(argv[2])
+    a == int(argv[1])
+    opp == int(argv[2])
+    b == int(argv[3])
     if (opp == "+"):
         print("{:d} {:s} {:d} = {:d}".format(a, opp, b, add(a, b)))
     elif (opp == "-"):
