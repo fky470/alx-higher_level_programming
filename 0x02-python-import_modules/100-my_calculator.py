@@ -6,10 +6,9 @@ def calculator(argv):
     n = len(argv) - 1
     if n != 3:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
-
         exit(1)
     a = int(argv[1])
-    opp = int(argv[2])
+    opp = argv[2]
     b = int(argv[3])
     if (opp == '+'):
         print("{:d} {:s} {:d} = {:d}".format(a, opp, b, add(a, b)))
@@ -21,7 +20,6 @@ def calculator(argv):
         print("{:d} {:s} {:d} = {:d}".format(a, opp, b, div(a, b)))
     else:
         print("Unknown operator. Available operators: +, -, * and /")
-
         exit(1)
 
 
